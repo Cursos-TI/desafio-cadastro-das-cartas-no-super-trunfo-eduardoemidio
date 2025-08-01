@@ -1,27 +1,26 @@
 #include <stdio.h>
 
 int main(){
-    //Variáveis Carta 1:
+    //Carta 1:
     char estado1; //Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
     int codigoCarta1; //A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
-    char nomeCidade1[50]; //O nome da cidade. Tipo: char[] (string)
-    int populacao1[20]; //O número de habitantes da cidade. Tipo: int
+    char nomeCidade1[20]; //O nome da cidade. Tipo: char[] (string)
+    int populacao1; //O número de habitantes da cidade. Tipo: int
     float area1; // (em km²): A área da cidade em quilômetros quadrados. Tipo: float
     float PIB1; //O Produto Interno Bruto da cidade. Tipo: float
     int pontosTuristicos1; //Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
 
-    //Variáveis Carta 2:
+    //Carta 2:
     char estado2; //Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
     int codigoCarta2; //A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). 
-    codigoCarta2 = codigoCarta2 + estado2;
-    char nomeCidade2[50]; //O nome da cidade. Tipo: char[] (string)
+    char nomeCidade2[20]; //O nome da cidade. Tipo: char[] (string)
     int populacao2; //O número de habitantes da cidade. Tipo: int
     float area2; // (em km²): A área da cidade em quilômetros quadrados. Tipo: float
     float PIB2; //O Produto Interno Bruto da cidade. Tipo: float
     int pontosTuristicos2; //Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
 
     // Carta 1
-    printf("*** Dados da Carta 1***: \n");
+    printf("*** Dados da Carta 1 ***: \n");
     printf("Digite a letra do estado (A a H): ");
     scanf(" %c", &estado1);
 
@@ -45,7 +44,7 @@ int main(){
 
 
     // Carta 2
-    printf("*** Dados da Carta 2***: \n");
+    printf("*** Dados da Carta 2 ***: \n");
     printf("Digite a letra do estado (A a H): ");
     scanf(" %c", &estado2);
 
@@ -88,5 +87,4 @@ int main(){
     printf("PIB: %f bilhões de reais\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     return 0;
- 
 }
